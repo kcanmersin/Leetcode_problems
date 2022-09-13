@@ -2,8 +2,6 @@ class Solution {
 public:
     int reverse(int x) {
         int revx=0;
-        bool isneg=false;
-       
         while(x!=0)
         {
             int rev=x%10;
