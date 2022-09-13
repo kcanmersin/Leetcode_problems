@@ -45,16 +45,12 @@ public:
                 ptr[i++]=nums2[b++];
 
     }
-        printf("by %lu %lu %d",ptr[((f+s)/2)-1],ptr[((f+s)/2)],s);
         if((f+s)%2==0)
         {
-            printf("baay");
             return (ptr[((f+s)/2)-1]+ptr[((f+s)/2)])/2.00000;
         }else
         {
             return ptr[(f+s)/2];
         }
-        return 1;
-        
     }
 };
