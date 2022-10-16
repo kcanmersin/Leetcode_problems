@@ -7,13 +7,22 @@ bool isValid(string s) {
             stck.push(ch);
         }else
         {
-            if(stck.empty()) return false;
+            if(stck.empty()) 
+            {
+             return false;
+            }
             if(ch == ')' && stck.top() != '(')
-                return false;
+            {
+             return false;
+            }
             if(ch == '}' && stck.top() != '{')
-                return false;
+            {
+             return false;
+            }
             if(ch == ']' && stck.top() != '[')
-                return false;
+            {
+             return false;
+            }
             stck.pop();
         }
     }
