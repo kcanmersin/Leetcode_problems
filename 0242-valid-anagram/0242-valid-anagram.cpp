@@ -1,8 +1,12 @@
 class Solution {
 public:
     bool isAnagram(string s, string t) {
-         vector<int> useds(29, 0);
-         vector<int> usedt(29, 0);
+         vector<int> useds(26, 0);
+         vector<int> usedt(26, 0);
+        if(s.length()!=t.length())
+        {
+            return false;
+        }
         for(char c:s)
         {
           
