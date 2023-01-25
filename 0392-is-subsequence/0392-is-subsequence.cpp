@@ -23,10 +23,7 @@ public:
                 return false;
             }
         }
-        for(int a=0;a<s.length();a++)
-        {
-            cout<<hash[a]<<" ";
-        }
+       
         if(hash.size()!=s.length())
         {
             return false;
